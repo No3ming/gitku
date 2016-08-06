@@ -1,0 +1,20 @@
+<form name="register" class="register" >
+    <p class="txt-box">
+        <label for="username">账户名称：</label>
+        <input type="text" id="username" name="username" placeholder="请输入账户" ng-model="username" pattern="[A-Za-z]{6,10}" required />
+    </p>
+    <p class="txt-box">
+        <label for="psw_1">登陆密码：</label>
+        <input type="password" id="psw_1" placeholder="请输入密码" />
+    </p>
+    <p class="txt-box">
+        <label for="psw_2">确认密码：</label>
+        <input type="password" id="psw_2" placeholder="请输入密码" ng-model="password" name="password" pattern="" />
+    </p>
+    <p class="txt-box btn">
+        <button type="button" ng-click="go()" ng-disabled="register.username.$invadid">确认注册</button>
+    </p>
+    <pre>
+        {{register.password |json}}
+    </pre>
+</form>

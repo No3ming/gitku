@@ -1,0 +1,26 @@
+<form name="login" class="login">
+    <p class="in-box">
+        <input type="text" id="username" name="username" ng-model="username" placeholder="请输入账户" pattern="[A-Za-z]{6,10}" required>
+    </p>
+    <p class="in-box">
+        <input type="password" placeholder="请输入密码" required>
+    </p>
+    <p class="check-box">
+        <input type="checkbox" id="show_psw">
+        <label for="show_psw">显示密码</label>
+        <a href="#/forget" title="">忘记密码?</a>
+    </p>
+    <p class="check-box">
+        <input type="checkbox" id="autologin">
+        <label for="autologin">记住密码自动登录</label>
+    </p>
+    <p class="btn btn1">
+        <button type="button" ng-click="goList()" ng-disabled="login.username.$invalid">登录</button>
+    </p>
+    <p class="btn btn2">
+        <button type="button" ng-click="goRegister()">注册</button>
+    </p>
+    <pre>
+        {{login.username|json}}
+    </pre>
+</form>

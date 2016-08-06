@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="App">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <link rel="stylesheet" href="./src/css/dist/index.css">
+</head>
+
+<body>
+    <header id="header" class="header" ng-contronller="CtrlHeader">
+        <h1 ng-bind="title"></h1>
+        <a href="#/shopcase" ng-class="{{caseClass}}"></a>
+    </header>
+    <!-- /header -->
+    <main class="main" ng-view>
+
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="./src/js/controlles/CtrlModule.js"></script>
+    <script type="text/javascript" src="./src/js/services/ServiceModule.js"></script>
+    <script type="text/javascript" src="./src/js/constants/constantModule.js"></script>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+</body>
+
+</html>

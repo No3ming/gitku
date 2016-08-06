@@ -1,0 +1,11 @@
+<section ng-repeat="item in lists">
+    <a href="{{item.href}}" title="">
+        <div class="img-box">
+            <img src="{{item.src}}" alt="">
+        </div>
+        <div class="ms-box">
+            <p class="product-name" ng-bind="item.name"></p>
+            <p class="price" ng-bind="item.price"></p>
+        </div>
+    </a>
+</section>
